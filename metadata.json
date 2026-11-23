@@ -1,0 +1,6 @@
+{
+  "name": "Wireframe iPhone 15 - Struttura Interattiva",
+  "description": "Applicazione mobile wireframe per iPhone 15 in bianco e nero basata sull'architettura a diagramma con barra di navigazione a 3 schermate e gerarchia di sottoschermate collegate.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

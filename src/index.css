@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Crisp 1px Figma wireframe X-box (diagonal corner-to-corner cross) */
+  .wf-x-box {
+    position: relative;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    background-image:
+      linear-gradient(
+        to top right,
+        transparent calc(50% - 0.6px),
+        #000000 calc(50% - 0.6px),
+        #000000 calc(50% + 0.6px),
+        transparent calc(50% + 0.6px)
+      ),
+      linear-gradient(
+        to bottom right,
+        transparent calc(50% - 0.6px),
+        #000000 calc(50% - 0.6px),
+        #000000 calc(50% + 0.6px),
+        transparent calc(50% + 0.6px)
+      );
+  }
+
+  /* Optional subtle 12-column Figma layout guide overlay */
+  .wf-col-grid {
+    background-image: repeating-linear-gradient(
+      to right,
+      transparent 0px,
+      transparent 10px,
+      rgba(255, 0, 0, 0.06) 10px,
+      rgba(255, 0, 0, 0.06) 36px
+    );
+  }
+
+  /* Subtle wireframe blueprint square grid for outer canvas */
+  .wf-canvas-grid {
+    background-size: 24px 24px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.14) 1px, transparent 1px);
+  }
+}
+
+/* Clean minimal scrollbar inside iPhone viewport */
+.screen-scroll::-webkit-scrollbar {
+  width: 3px;
+}
+.screen-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.screen-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 2px;
+}
